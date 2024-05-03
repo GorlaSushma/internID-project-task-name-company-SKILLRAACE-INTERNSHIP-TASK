@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS for the photo gallery */
+        .photo-gallery {
+            margin: 20px auto;
+        }
+        .photo {
+            position: relative;
+            overflow: hidden;
+        }
+        .photo img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s ease;
+            padding: 5px;
+        }
+        .photo:hover img {
+            transform: scale(1.1);
+        }
+        .photo-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .photo:hover .photo-overlay {
+            opacity: 1;
+        }
+        .photo-overlay-content {
+            text-align: center;
+        }
+        .photo-overlay-content h3 {
+            margin-bottom: 10px;
+        }
+        .photo-overlay-content p {
+            margin-bottom: 0;
+        }
+        h1{
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size: 55px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+       <h1>GALLERY</h1>
+       <hr>
+    </div>
+
+<div class="container">
+    <div class="row photo-gallery">
+        <div class="col-md-4">
+            <div class="photo">
+                <img src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg" alt="Photo 1">
+                <div class="photo-overlay">
+                    <div class="photo-overlay-content">
+                        <h3>Photo 1</h3>
+                        <p>Description of Photo 1</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="photo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT26oM2M4tvZMnMHqrhPaDOZy0LmGaNZlPwuAIJmGl47Q&s" alt="Photo 2">
+                <div class="photo-overlay">
+                    <div class="photo-overlay-content">
+                        <h3>Photo 2</h3>
+                        <p>Description of Photo 2</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="photo">
+                <img src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg" alt="Photo 3">
+                <div class="photo-overlay">
+                    <div class="photo-overlay-content">
+                        <h3>Photo 3</h3>
+                        <p>Description of Photo 3</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="photo">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/030/353/613/small_2x/natural-background-ai-generated-photo.jpg" alt="Photo 1">
+                <div class="photo-overlay">
+                    <div class="photo-overlay-content">
+                        <h3>Photo 4</h3>
+                        <p>Description of Photo 4</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="photo">
+                <img src="https://www.wbcsd.org/var/site/storage/images/overview/news-insights/wbcsd-insights/accelerating-business-along-the-road-to-a-nature-positive-future/225091-1-eng-GB/Accelerating-business-along-the-road-to-a-nature-positive-future_i1140.jpg" alt="Photo 1">
+                <div class="photo-overlay">
+                    <div class="photo-overlay-content">
+                        <h3>Photo 5</h3>
+                        <p>Description of Photo 5</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="photo">
+                <img src="https://shotkit.com/wp-content/uploads/bb-plugin/cache/nature-photography-landscape-a892fa3059994f7f5119d4a53fadada3-zybravgx2q47.jpg" alt="Photo 1">
+                <div class="photo-overlay">
+                    <div class="photo-overlay-content">
+                        <h3>Photo 6</h3>
+                        <p>Description of Photo 6</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="photo">
+                <img src="https://d1whtlypfis84e.cloudfront.net/guides/wp-content/uploads/2019/07/23090714/nature-1024x682.jpeg" alt="Photo 1">
+                <div class="photo-overlay">
+                    <div class="photo-overlay-content">
+                        <h3>Photo 7</h3>
+                        <p>Description of Photo 7</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="photo">
+                <img src="https://www.salesforce.com/news/wp-content/uploads/sites/3/2023/04/NaturePositive.jpg" alt="Photo 1">
+                <div class="photo-overlay">
+                    <div class="photo-overlay-content">
+                        <h3>Photo 8</h3>
+                        <p>Description of Photo 8</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="photo">
+                <img src="https://expertphotography.b-cdn.net/wp-content/uploads/2018/07/nature-photography.jpg" alt="Photo 1">
+                <div class="photo-overlay">
+                    <div class="photo-overlay-content">
+                        <h3>Photo 9</h3>
+                        <p>Description of Photo 9</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
